@@ -12,6 +12,6 @@ export default {
   dbName: "postgres",
   type: "postgresql",
   port: 5433,
-  password: process.env.POSTGRESS_PASS,
+  password: "postgres",
   debug: !__prod__,
 } as Parameters<typeof MikroORM.init>[0];
